@@ -1,0 +1,50 @@
+<header id="main-header" class="py-2 bg-info text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>
+              <i class="fas fa-user p-1"></i>Perfil
+          </h1>
+        </div>
+      </div>
+    </div>
+</header>
+
+<section id="actions" class="py-4 mb-4 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <a routerLink="/" class="btn btn-light w-100"><i class="fas fa-arrow-left p-1"></i>Regresar al inicio</a>
+            </div>
+            <div class="col-md-3">
+                <button type="submit" (click)="guardarValores()" class="btn btn-success w-100"><i class="fas fa-check p-1"></i>Guardar Cambios</button>
+            </div>
+            <div class="col-md-3">
+                <a (click)="sumarPuntos()" class="btn btn-warning w-100"><i class="fas fa-check p-1"></i>Ganar Puntos</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="configuracion" >
+      <div class="container">
+          <div class="row">
+              <div class="col">
+                  <div class="card">
+                      <div class="card-header">
+                          <h4>Editar Configuracion</h4>
+                      </div>
+                      <div class="card-body">
+                          <fieldset class="form-group">
+                            <img src="{{usuarioActivo?.image}}" class="imagen-perfil">
+                            <h6>Nombre de usuario:<input type="text" readonly value="{{usuarioActivo?.usuario}}"></h6>
+                            <h6>Pais:<input type="text" readonly value={{usuarioActivo?.pais}}></h6>
+                            <legend>Fecha registro: {{usuarioActivo?.fechaRegistro.seconds * 1000 | date:'dd/MM/yyyy'}}</legend>
+                            <legend>Ultima sesion: {{usuarioActivo?.ultimaSesion.seconds * 1000 | date: 'd/MM/yyyy - HH:mm'}}</legend>
+                          </fieldset>
+                      </div>
+                  </div>
+                </div>
+          </div>
+      </div>
+</section>

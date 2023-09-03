@@ -1,0 +1,30 @@
+<section id="configuracion" class="py-4 mb-4">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h4>Lootbox</h4>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
+
+<section id="configuracion" class="py-4 mb-4">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h1><i class="fas fa-box"></i></h1>
+                        <h2>Puedes volverla a abrir a partir del dia: {{this.usuarioActivo?.tiempoRecompensaDiaria.seconds * 1000 | date: 'dd/MM/yyyy HH:mm:ss'}}</h2>
+                        <h2>Quedan: {{this.compararTimestamps()}}</h2>
+                        <button class="btn btn-secondary" [disabled]="!this.habilitado" style="width: 100px;" (click)="recogerRecompensaDiaria()">Abrir</button>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>

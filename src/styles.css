@@ -1,1 +1,132 @@
-/* You can add global styles to this file, and also import other style files */
+.imagen-perfil{
+    border-radius: 5px;
+}
+
+.game-1{
+    font-size: 50px;
+}
+.nav-desktop-badge {
+    position: relative;
+    color:#fff;
+    text-align:center;
+    border-radius:5px;
+    padding: 2px;
+    left:-5px;
+    top: -15px;
+    font-size:10px;
+    font-weight:500
+}
+
+.is-invalid {
+    border-style: solid;
+    border-color: red;
+    border-radius: 5px;
+}
+
+.form-control-feedback {
+    color: red;
+}
+
+.nav-item{
+    text-align: right;
+}
+.fa-sign-out-alt{
+    font-size: 20px;
+}
+
+#item-bux{
+    font-size: 16px;
+}
+
+#item-username-icon{
+    border-radius: 100px;
+}
+@media screen and (max-width: 767px) {
+    #item-username{
+        font-size: 17px;
+    }
+    #item-1{
+        font-size: 0px;
+    }
+    #item-1-icon{
+        font-size: 20px;
+    }
+    #item-2{
+        font-size: 0px;
+    }
+    #item-2-icon{
+        font-size: 20px;
+    }
+    .fa-sign-out-alt{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 575px) {
+    #item-username{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    #item-1{
+        font-size: 16px;
+    }
+    #item-1-icon{
+        font-size: 16px;
+    }
+    #item-2{
+        font-size: 16px;
+    }
+    #item-2-icon{
+        font-size: 16px;
+    }
+    .fa-sign-out-alt{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 414px) {
+    #navbar-brand{
+        font-size: 18px ;
+    }
+}
+@media screen and (max-width: 391px) {
+    #item-username-icon{
+        width: 25px;
+    }
+    .fa-sign-out-alt{
+        font-size: 19px;
+    }
+    #item-bux{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 380px) {
+    #navbar-brand{
+        font-size: 15px ;
+    }
+}
+@media screen and (max-width: 359px) {
+    #item-username{
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+}
+@media screen and (max-width: 343px) {
+    #item-username{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #item-bux{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 338px) {
+    .fa-sign-out-alt{
+        font-size: 16px;
+    }
+}
+
+body{
+    min-width: 336px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

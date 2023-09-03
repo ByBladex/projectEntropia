@@ -1,0 +1,17 @@
+<div class="card mt-5" *ngIf="user$ | async as user; else loading">
+    <div class="card-body">
+        <h3 class="card-tittle text-center">Confirmación de email</h3>
+        <div class="form-group mt-4">
+            <p class="text-center">Hemos enviado una confirmación a la dirección <strong>{{user?.email}}</strong></p>
+            <p class="text-center">Por favor revísalo y haz <strong>click</strong> en el link para verificar tu email</p>
+            <p class="text-center">Revisa también en la carpeta de <strong>spam</strong></p>
+        </div>
+        <div class="form-group text-center mt-5">
+            <button class="btn btn-primary" (click)="sendVerification()">Reenviar verificación de email</button>
+        </div>
+    </div>
+</div>
+
+<ng-template #loading>
+    Loading...
+</ng-template>
